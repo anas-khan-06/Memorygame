@@ -1,0 +1,57 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    margin: 10px 0;
+}
+
+body{
+    background-color: rgb(41, 6, 74);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: 10px;
+    color: white;
+    font-size: x-large;
+    font-family: cursive;
+}
+.cardboards{
+   background-color: rgb(110, 19, 195);
+height: 500px;
+width: 600px;
+ backdrop-filter: blur(100px);
+ margin: auto;
+ border-radius: 10px;
+   display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+}
+.card{
+    width: 110px;
+    height:110px;
+    border: 2px solid rgb(38, 1, 73);
+    background-color: rgb(41, 6, 74) ;
+    margin: auto;
+   cursor: pointer;
+   transition: transform 0.1s ease;
+   border-radius: 9px;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  user-select: none;
+  
+}
+ .card:active {
+  transform: scale(0.9);
+}
+.card.flipped {
+  background-color: #fff;
+  transform: rotateY(180deg);
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.matched{
+    background-color: goldenrod;
+}
